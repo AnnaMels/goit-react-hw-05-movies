@@ -45,9 +45,7 @@ const Card = () => {
 
 
     return (
-        <>
             <MovieInfo film={movie} error={error} />
-        </>
     )
 }
 

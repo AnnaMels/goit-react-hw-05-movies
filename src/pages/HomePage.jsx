@@ -15,9 +15,7 @@ const HomePage = () => {
 
 
     return (
-        <>
             <TrendingMoviesList movies={movies}/>
-        </>
     )
 }
 

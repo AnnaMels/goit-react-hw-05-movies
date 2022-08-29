@@ -1,4 +1,4 @@
-import UserRoutes from '../UserRoutes';
+import UserRoutes from './UserRoutes';
 import Header from './Header';
 
 

@@ -4,11 +4,19 @@
     flex-wrap: wrap;
     padding-left: 0;
     list-style-type: none;
+    gap: 10px;
 }
 
 .cardListItem {
-    width: 150px;
-    margin-right: 10px;
+    flex-basis: calc((100% - 10px) / 2);
+    /* width: 150px;
+    margin-right: 10px; */
+}
+
+@media screen and (min-width: 768px) {
+    .cardListItem {
+    flex-basis: calc((100% - 30px) / 4);
+}
 }
 
 .cardListItem:last-child {
@@ -16,12 +24,18 @@
 }
 
 .castImg {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 225px;
+    width: 150px;
 }
 
 .actor,
 .character {
     font-weight: 200;
     color: red;
+}
+
+.castInfo {
+    text-align: center;
 }

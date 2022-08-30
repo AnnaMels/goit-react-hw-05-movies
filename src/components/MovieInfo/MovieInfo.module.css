@@ -1,6 +1,7 @@
 .button {
 display: block;
 margin-bottom: 15px;
+margin-left: 10px;
 width: 150px;
 height: 40px;
 cursor: pointer;
@@ -13,12 +14,11 @@ border: 1px solid red;
 }
 
 .container {
-    padding: 15px;
+    padding-top: 10px;
     background-color: antiquewhite;
 }
 
 .movieInfo {
-    display: flex;
     padding-bottom: 15px;
     border-bottom-style: double;
     border-color: red;
@@ -26,15 +26,35 @@ border: 1px solid red;
     line-height: 1.5;
 }
 
+.cardImage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score {
+    font-weight: bold;
+}
+
 .movieDetails {
     padding: 20px;
 }
 
+.mainTitle {
+    text-align: center;
+
+}
+
 .title {
+    margin-top: 0;
     font-weight: 500;
 }
 
+.addInfoWrapper {
+    padding: 10px;
+}
+
 .additionalInfo {
+    margin-top: 0;
     font-weight: 500;
     font-size: 20px;
 }
@@ -76,4 +96,29 @@ border: 1px solid red;
 
 .cardListItem:first-child {
     margin-bottom: 10px;
+}
+
+/* Tablet and desctop styles */
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+
+    .movieInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainTitle {
+        text-align: start;
+    }
+
+    .addInfoWrapper {
+        padding: 0;
+}
 }

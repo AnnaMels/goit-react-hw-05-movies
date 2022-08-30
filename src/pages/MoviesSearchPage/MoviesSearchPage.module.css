@@ -23,3 +23,7 @@
     border-radius: 5px;
     border: 1px solid black;
 }
+
+.formWrapper {
+    padding: 15px;
+}

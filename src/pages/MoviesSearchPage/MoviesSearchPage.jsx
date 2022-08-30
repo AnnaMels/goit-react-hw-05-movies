@@ -26,7 +26,7 @@ const SearchMovie = () => {
     }
 
     return (
-        <div>
+        <div className={styles.formWrapper}>
             <form className={styles.form} onSubmit={onSearchButtonClick}>
                 <input className={styles.input} onChange={e => setState(e.target.value)} type="text" />
 
